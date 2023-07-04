@@ -20,12 +20,15 @@ for (let i = 1; i <= 100; i++) {
   boxValue.classList.add("box");
   
   if (((i) % 3 === 0) && ((i) % 5 === 0)) {
-    boxValue.innerHTML = 'FIZZBUZZ';
+    boxValue.classList.add("box-fizzbuzz");
+    boxValue.innerHTML = 'FIZZBUZZ'; 
     //console.log((i) + ' FIZZBUZZ');
   } else if ((i) % 5 === 0) {
+    boxValue.classList.add("box-buzz");
     boxValue.innerHTML = 'BUZZ';
     //console.log((i) + ' BUZZ');
   } else if ((i) % 3 === 0) {
+    boxValue.classList.add("box-fizz");
     boxValue.innerHTML = 'FIZZ';
     //console.log((i) + ' FIZZ');
   } else 
