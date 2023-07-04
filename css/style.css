@@ -1,0 +1,10 @@
+.chess-board {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  aspect-ratio: 1/1;
+  width: calc(100% / 10);
+  border: 1px dashed green;
+}
