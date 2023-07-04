@@ -16,7 +16,7 @@
 const chessBoard = document.querySelector(".chess-board");
 
 for (let i = 1; i <= 100; i++) {
-  let boxValue = document.createElement("div");
+  const boxValue = document.createElement("div");
   boxValue.classList.add("box");
   
   if (((i) % 3 === 0) && ((i) % 5 === 0)) {
